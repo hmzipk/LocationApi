@@ -42,6 +42,12 @@ namespace LocationApi
                         richTextBox1.Text += "IP:" + okuyucum.Value.ToString() + "\n";
 
                     }
+                    if (okuyucum.Name == "timezone")
+                    {
+                        okuyucum.Read();
+                        richTextBox1.Text += "TimeZone:" + okuyucum.Value.ToString() + "\n";
+
+                    }
                 }
             }
             okuyucum.Close();
