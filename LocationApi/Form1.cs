@@ -48,6 +48,12 @@ namespace LocationApi
                         richTextBox1.Text += "TimeZone:" + okuyucum.Value.ToString() + "\n";
 
                     }
+                    if (okuyucum.Name == "isp")
+                    {
+                        okuyucum.Read();
+                        richTextBox1.Text += "Internet Servis Saglayici:" + okuyucum.Value.ToString() + "\n";
+
+                    }
                 }
             }
             okuyucum.Close();
